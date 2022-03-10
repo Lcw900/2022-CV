@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    <title>Lindsey Alcinay</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content='IE=Edge;chrome=35+' https-equiv='X-UA-Compatible' />
+    <meta name="description" content="CompTIA A+ certified Information Technology Expert with several years of experience in rendering IT solutions and support in a broad range of corporate IT...." />
+    <meta name="keywords" content="Lindsey Alcinay, Lindsey Alcinay Portfolio, Lindsey Alcinay, Alcinay" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:title" content="Lindsey Alcinay">
+    <meta property="og:description" content="CompTIA A+ certified Information Technology Expert with several years of experience in rendering IT solutions and support in a broad range of corporate IT...">
+    <meta property="og:image" content="assets/images/card.PNG">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/">
+    <meta property="twitter:title" content="Lindsey Alcinay">
+    <meta property="twitter:description" content="CompTIA A+ certified Information Technology Expert with several years of experience in rendering IT solutions and support in a broad range of corporate IT....">
+    <meta property="twitter:image" content="assets/images/card.PNG">
+    <meta name="developer" content="stoXmod">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+    <link rel="shortcut icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="assets/plugins/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/css/owl.css">
+    <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+</head>
+
+<body id="body" class="white-vertion black-bg">
+    <div class="section-loader">
+        <div class="preLoaderContainer"> <img src="assets/images/preloader_image.png" class="preloaderImage" alt="img">
+            <div class="preLoaderAnimation">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav" id="mh-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg mh-nav nav-btn"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolios">Portfolios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div><button type="button" id="chnge" style="font-size:15px;color:white;" class="btn btn-fill wow fadeInUp dark-mode-toggle" data-wow-duration="0.8s" data-wow-delay="0.4s" name="dark_light" onclick="toggleDarkLight()" title="white/dark mode"><b>Dark Mode</b></button></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="mh-home image-bg home-2-img" id="home">
+        <div class="img-foverlay img-color-overlay">
+            <div class="container">
+                <div class="row section-separator xs-column-reverse vertical-middle-content home-padding">
+                    <div class="col-sm-6">
+                        <div class="mh-header-info">
+                            <div class="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"><span>Hello I'm</span></div>
+                            <h1 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><b><span class="type"></span></b><span class="d-block f-14 mt-3 mb-4">Information Technology Expert &#183; Certified Information Technology Professional</span></h1>
+                            <ul>
+                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i class="fal fa-envelope"></i><a href="mailto:lalcinay@gmail.com?Subject=I%20need%20contact%20you!">lalcinay@gmail.com</a></li>
+                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fal fa-phone"></i><a href="tel:732–407-4960">732–407-4960</a></li>
+                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i class="fal fa-map-marker-alt"></i><a onclick="window.open(this.href,'targetWindow', `toolbar=no, width=960, height=1040, top=0, left=960, status=no, menubar=no, scrollbars=yes, resizable=yes`); return false;" href="https://www.google.lk/maps/place/Woodbridge+Township,+NJ,+USA/@40.5499139,-74.3184104,13z/data=!3m1!4b1!4m5!3m4!1s0x89c3b5b758c6349b:0x938c0e659e3a78da!8m2!3d40.5575986!4d-74.2846022"
+                                        target="_blank">Woodbridge Township, NJ</a></li>
+                            </ul>
+                            <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                <li>
+                                    <a onclick="window.open(this.href,'targetWindow', `toolbar=no, width=960, height=1040, top=0, left=960, status=no, menubar=no, scrollbars=yes, resizable=yes`); return false;" href="https://github.com/Lcw900" target="_blank"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li><a onclick="window.open(this.href,'targetWindow', `toolbar=no, width=960, height=1040, top=0, left=960, status=no, menubar=no, scrollbars=yes, resizable=yes`); return false;" href="https://linkedin.com/in/lindsey-alcinay-63571354/"
+                                        target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                            <div class="img-border"><img src="assets/images/hero.png" alt="hero" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mh-about pt-md-5" id="about">
+        <div class="container">
+            <div class="row section-separator">
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><img src="assets/images/ab-img.png" alt="about-img" class="img-fluid"></div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-about-inner">
+                        <h3 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"><b>About Myself</b><br></h3>
+                        <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" style="line-height:1.6;">Insightful, certified and result driven Information Technology Expert with several years of experience in rendering IT solutions and support in a broad range of corporate IT initiatives - while participating in planning, analysis
+                            and implementation of system solutions to facilitate the attainment of business objectives. Excelled at providing top notch IT solutions and support, coupled with Sound knowledge of Computer Networks and Security, operating
+                            systems (Microsoft Windows, Apple MacOS). Adapt to communicate technical solutions to non-technical end users. Excellent multitasking, problem solving and resource management skills. Passionate in acquiring new skills and knowledge,
+                            adapt them to deliver results. Excellent time- management and communication skills, confident and patient with an ability to develop and maintain professional rapport with colleagues and clients through effective communication
+                            for the purpose of achieving organizational philosophy</p>
+                        <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <ul>
+                                <li><span>Network Security</span></li>
+                                <li><span>I.T Hardware maintenance </span></li>
+                                <li><span>Network Configuration </span></li>
+                                <li><span>Systems Administration and Evaluation</span></li>
+                                <li><span>Software Installation</span></li>
+                                <li><span>User Experience Design</span></li>
+                                <li><span>Software Diagnosis</span></li>
+                                <li><span>Cisco WebEx, Citrix Systems, Fuze, etc.</span></li>
+                                <li><span>Emerging Technologies</span></li>
+                                <li><span>Information Management</span></li>
+                                <li><span>Troubleshooting</span></li>
+                            </ul>
+                        </div>
+                        <div>Do you want to know more about me?</div><button type="button" class="btn btn-fill" data-toggle="modal" data-target="#modelId">Download CV <i class="fa fa-download"></i></button></div>     
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="mh-skills" id="skills">
+        <div class="home-v-img">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="section-title text-center col-sm-12"></div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-skills-inner">
+                            <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                <div class="carousel-wrap">
+                                    <div class="owl-carousel">
+                                        <div class="item">
+                                            <h3>Hardware Skills</h3>
+                                            <div class="each-skills">
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">Network Security</div>
+                                                            <div class="percentagem-num">92%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:92%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">Troubleshooting</div>
+                                                            <div class="percentagem-num">95%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:95%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">I.T Hardware maintenance</div>
+                                                            <div class="percentagem-num">90%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:90%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">Network Configuration</div>
+                                                            <div class="percentagem-num">95%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:95%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">Systems Administration</div>
+                                                            <div class="percentagem-num">95%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:95%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">Emerging Technologies</div>
+                                                            <div class="percentagem-num">98%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:98%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h3>Software Skills</h3>
+                                            <div class="each-skills">
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">Software Installation</div>
+                                                            <div class="percentagem-num">92%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:92%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">UX Design</div>
+                                                            <div class="percentagem-num">95%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:95%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">Cloud Computing</div>
+                                                            <div class="percentagem-num">90%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:90%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">Software Diagnosis</div>
+                                                            <div class="percentagem-num">95%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:95%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">Information Management</div>
+                                                            <div class="percentagem-num">95%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:95%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="candidatos">
+                                                    <div class="parcial">
+                                                        <div class="info">
+                                                            <div class="nome">Cisco WebEx,Citrix Systems,Fuze</div>
+                                                            <div class="percentagem-num">98%</div>
+                                                        </div>
+                                                        <div class="progressBar">
+                                                            <div class="percentagem" style="width:98%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-professional-skills wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <h3>Professional Skills</h3>
+                            <ul class="mh-professional-progress">
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                    <div class="pr-skill-name">Time Management</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="90"></div>
+                                    <div class="pr-skill-name">Customer service</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                    <div class="pr-skill-name">Analytical Skills</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="98"></div>
+                                    <div class="pr-skill-name">Process Improvement</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                    <div class="pr-skill-name">Teamwork</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="92"></div>
+                                    <div class="pr-skill-name">Communication skills</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mh-experience image-bg featured-img-one" id="experience">
+        <div class="img-foverlay img-color-overlay">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="mh-work section-title col-sm-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                        <h3 class="mb-md-5">Professional Experience</h3>
+                    </div>
+                    <div class="part col-sm-12">
+                        <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <div class="portfolioContainer row">
+                                <div class="grid-item col-md-6 col-sm-6 col-xs-12 mh-experience-deatils">
+                                    <div class="mh-experience-details grid-box p-4">
+                                        <div class="mh-work-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.4s ">
+                                            <h4>Desktop Technician<br><a href="https://beaconhillstaffing.com/" target="_blank ">Beacon Hill Staffing at Shionogi, Florham Park, NJ</a></h4>
+                                            <p style="font-size:10px !important;margin-top:-10px;">Japanese pharmaceutical company best known for developing Crestor</p>
+                                            <div class="mh-eduyear ">2019 – Present</div>
+                                            <ul class="work-responsibility ">
+                                                <p>Responded to requests for technical assistance in person via phone and remotely for the following technologies:Windows based end points (Laptops & Thin Clients) Tablets & Smartphones (IOS) and Microsoft
+                                                    Office Suite</p>
+                                                <p class="mb-2" style="font-size:12px">Core Responsibilities & Accomplishments:</p>
+                                                <li><i class="fa fa-circle "></i>Provide support to end users on a variety of issues ranging from hardware, software, network and account management, VPN Global Protect connectivity</li>
+                                                <li><i class="fa fa-circle "></i>All Performed on-site technical support, installation, repair, preventative maintenance of workstations and related software/hardware before Covid Pandemic </li>
+                                                <li><i class="fa fa-circle "></i>Maintained confidentiality and discretion when working with passworded or sensitive materials</li>
+                                                <li><i class="fa fa-circle "></i>Work with applications like MobileIron, Box, Active directory, Global Protect VPN, SharePoint and WebEx</li>
+                                                <li><i class="fa fa-circle "></i>Ability and emotional intelligence to teach highly technical content to users with any level of experience</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-md-6 col-sm-6 col-xs-12">
+                                    <div class="grid-box p-4">
+                                        <div class="mh-work-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.4s ">
+                                            <h4>Help Desk Analyst</h4>
+                                            <h4 style="line-height:1.2;"><a href="https://www.summitmedicalgroup.com/" target="_blank">Allscripts at Summit Medical Group, New Providence, NJ</a></h4>
+                                            <p style="font-size:10px !important;margin-top:-5px;">Allscripts the I.T solutions provider for Summit Medical Group, The largest physician-owned multispecialty practice in New Jersey</p>
+                                            <div class="mh-eduyear ">2018 – 2019</div>
+                                            <ul class="work-responsibility ">
+                                                <p>Acted as the first point of contact for the provision of user support with the core duty of providing timely and efficient solution to customers request and challenges. Also, collate user’s calls into the
+                                                    IT Service Desk, calls are all logged into CA technologies ticketing system for immediate processing.</p>
+                                                <p class="mb-2" style="font-size:12px">Core Responsibilities & Accomplishments:</p>
+                                                <li><i class="fa fa-circle "></i>Answer 25-30 incident calls per day as well as requests via email</li>
+                                                <li><i class="fa fa-circle "></i>All level 2 support printer incidents are forwarded to the contracted partner Alltech services </li>
+                                                <li><i class="fa fa-circle "></i>Assist all employees and members of Summit Medical Group with level 1 desktop technical support over the phone. Accessed end user’s desktops remotely to further troubleshoot</li>
+                                                <li><i class="fa fa-circle "></i>Troubleshoot Applications and software such as Microsoft Office 365, Citrix Systems, Fuze, M*Modal, Click Share, Duo Mobile, Cisco WebEx, Symantec V.I.P, Athena Health, BitLocker</li>
+                                                <li><i class="fa fa-circle "></i>Troubleshoot external desktop hardware such as Dymo Label printers, Docket Port Scanners, RDM credit card and check machines, Polycom VOIP telephones, mobile phones, tablets,
+                                                    network printers and fax machines</li>
+                                                <li><i class="fa fa-circle "></i>Tools used to troubleshoot and resolve incidents:Active Directory, Print Management, Team Viewer, Remote Desktop, Skype For Business, Cisco AnyConnect VPN</li>
+                                                <li><i class="fa fa-circle "></i>Operating systems:Windows 7, Windows 8.1, Windows 10</li>
+                                                <li><i class="fa fa-circle "></i>Provide some level 2 technical support to end users within the New Providence business building. Manually troubleshooted desktop issues at end user’s workstation. </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-md-6 col-sm-6 col-xs-12">
+                                    <div class="grid-box p-4">
+                                        <div class="mh-work-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.4s ">
+                                            <h4>Customer Service<br><a href="https://www.nelinen.com/" target="_blank ">North East Linen Supply, Linden, NJ</a></h4>
+                                            <div class="mh-eduyear ">2013 – 2018</div>
+                                            <ul class="work-responsibility ">
+                                                <p>Regional Textile Rental Company serviced many of the fortune 500 companies as well as major educational institutions and privately-owned fine dining restaurants in the Northeast Region. </p>
+                                                <p class="mb-2" style="font-size:12px">Core Responsibilities & Accomplishments:</p>
+                                                <li><i class="fa fa-circle "></i>Communicate with customers on linen napkins, linen tablecloth and garment inquires. Displayed knowledge of business, listening skills and courteous phone etiquette:</li>
+                                                <li><i class="fa fa-circle "></i>Processed invoices and ensured that signatures are verified after linen deliveries were made, collected cash and checks from delivery men after linen deliveries were accepted
+                                                    by customers. Ensured that the cash drawer was always balanced and maintained, calculated thousands of dollars in cash each day and verified every bill was not counterfeit before turning it in to the
+                                                    accountant at the end of each day.</li>
+                                                <li><i class="fa fa-circle "></i>Accommodated customers by Placing Linen Napkins, Linen Tablecloth and garment orders over the phone, via email or fax. Modified quantities and sizes of Linens upon request.</li>
+                                                <li><i class="fa fa-circle "></i>Screens all telephone calls before transferring them to appropriate department.</li>
+                                                <li><i class="fa fa-circle "></i>Worked well in a team environment, trained new customer service Representatives upon joining the roster and handling customer inquiries and complaints.</li>
+                                                <li><i class="fa fa-circle "></i>Prepared daily Pre-Bills in all deliverymen’s route folders before their departure to make all Linen Deliveries.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolios">
+        <div class="container">
+            <div class="col-md-12 single-feature" id="balance-2d">
+                <div class="row section-separator">
+                    <div class="mh-work section-title col-sm-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                        <h3 class="mb-md-5">Portfolios</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-image mb-lg-0 mb-md-0 mb-5 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"><img src="assets/images/to_do.gif" class="w-100 port__img" alt="to-do app"></div>
+                    </div>
+                    <div class="col-md-5 offset-md-1">
+                        <div class="row h-100">
+                            <div class="col-md-12 align-self-center wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                                <div class="feature-txt-in">
+                                    <div class="main-title" style="padding-bottom:20px !important;">
+                                        <h2 class="mb-0" style="color:#e00013 !important;">Python Flask Todo Web Application</h2>
+                                    </div>
+                                    <p class="m-0" style="padding-bottom:10px;">The project is a to do application where you can add tasks. When completed, Mark them as completed. The project was created in flask framework with python code on the back end and HTML and CSS on the front end. </p>
+                                </div>
+                                <div class="d-flex" style="margin-top:20px;">
+                                    <div>
+                                        <a onclick="window.open(this.href,'targetWindow', `toolbar=no, width=960, height=1040, top=0, left=960, status=no, menubar=no, scrollbars=yes, resizable=yes`); return false;" href="https://github.com/Lcw900/todobylindseyalcinay"><i class="fab fa-github mr-2"></i>View Source Code</a>
+                                    </div>
+                                    <div class="ml-5">
+                                        <a onclick="window.open(this.href,'targetWindow', `toolbar=no, width=960, height=1040, top=0, left=960, status=no, menubar=no, scrollbars=yes, resizable=yes`); return false;" href="https://todolindseyalcinay.herokuapp.com/"><i class="fas fa-terminal mr-2"></i>Watch Live Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="mh-education">
+        <div class="img-foverlay img-color-overlay">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="mh-work section-title col-sm-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                        <h3 class="mb-md-5">Education</h3>
+                    </div>
+                    <div class="part col-sm-12">
+                        <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <div class="portfolioContainer row">
+                                <div class="grid-item col-md-6 col-sm-6 col-xs-12 mh-experience-deatils">
+                                    <div class="mh-experience-details grid-box p-4">
+                                        <div class="mh-work-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.4s ">
+                                            <div class="mh-education-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                                                <h4>Computer Science<br><a href="https://www.kean.edu/" target="_blank" style="font-size:14px;">Kean University, Union, New Jersey</a></h4>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mh-eduyear ">GPA 3.4</div>
+                                                    <div class="mh-eduyear ">2007-2009</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-md-6 col-sm-6 col-xs-12 mh-experience-deatils">
+                                    <div class="mh-experience-details grid-box p-4">
+                                        <div class="mh-work-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.4s ">
+                                            <div class="mh-education-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                                                <h4>General Studies High School Diploma<br><a href="https://www.woodbridge.k12.nj.us/" target="_blank" style="font-size:14px;">Woodbridge High School, Woodbridge, New Jersey</a></h4>
+                                                <div class="justify-content-between d-flex">
+                                                    <div class="mh-eduyear ">GPA 3.6</div>
+                                                    <div class="mh-eduyear ">2003-2007</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-md-6 col-sm-6 col-xs-12 mh-experience-deatils">
+                                    <div class="mh-experience-details grid-box p-4">
+                                        <div class="mh-work-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.4s ">
+                                            <div class="mh-education-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                                                <div class="d-flex form-inline">
+                                                    <div class="col-3">
+                                                        <img src="assets/images/fundamentals.png" width="80px" class="img-fluid grade__img" alt="comptia fundamentals">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h4 class="mb-0 ml-3">CompTIA Fundamentals<br><a style="font-size:14px;color:#4267b2;">Certifications</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-md-6 col-sm-6 col-xs-12 mh-experience-deatils">
+                                    <div class="mh-experience-details grid-box p-4">
+                                        <div class="mh-work-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.4s ">
+                                            <div class="mh-education-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                                                <div class="d-flex form-inline">
+                                                    <div class="col-3">
+                                                        <img src="assets/images/a+.png" width="80px" class="img-fluid grade__img" alt="comptia a+">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h4 class="mb-0 ml-3">CompTIA A+<br><a style="font-size:14px;color:#4267b2;">Certifications</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="mh-footer " id="contact">
+        <div class="map-image image-bg ">
+            <div class="container ">
+                <div class="row section-separator ">
+                    <div class="col-sm-12 section-title wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.2s ">
+                        <h3>Contact Me</h3><br><br></div>
+                    <div class="col-sm-12 mh-footer-address ">
+                        <div class="row ">
+                            <div class="col-sm-12 col-md-4 mb-lg-0 mb-4">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp h-100" data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                                    <div class="each-icon "><i class="fal fa-map-marker-alt"></i></div>
+                                    <div class="each-info ">
+                                        <h4>Address</h4><a onclick="window.open(this.href,'targetWindow', `toolbar=no, width=960, height=1040, top=0, left=960, status=no, menubar=no, scrollbars=yes, resizable=yes`); return false;" href="https://www.google.lk/maps/place/Woodbridge+Township,+NJ,+USA/@40.5499139,-74.3184104,13z/data=!3m1!4b1!4m5!3m4!1s0x89c3b5b758c6349b:0x938c0e659e3a78da!8m2!3d40.5575986!4d-74.2846022"
+                                            target="_blank">Woodbridge Township, NJ</a></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 mb-lg-0 mb-4">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp h-100" data-wow-duration="0.8s " data-wow-delay="0.5s ">
+                                    <div class="each-icon "><i class="fal fa-envelope"></i></div>
+                                    <div class="each-info ">
+                                        <h4>Email</h4><a href="mailto:lalcinay@gmail.com?Subject=I%20need%20contact%20you! " target="_blank ">lalcinay@gmail.com</a><br></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 ">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp h-100" data-wow-duration="0.8s " data-wow-delay="0.7s ">
+                                    <div class="each-icon "><i class="fal fa-phone"></i></div>
+                                    <div class="each-info ">
+                                        <h4>Phone</h4><a href="tel:732–407-4960">732–407-4960</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                        <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator">
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="row">
+                                <div class="col-sm-12"><input name="name" class="contact-name form-control" id="name" type="text" placeholder="Your Name" required></div>
+                                <div class="col-sm-12"><input name="name" class="contact-subject form-control" id="email" type="email" placeholder="Your Email" required></div>
+                                <div class="col-sm-12"><textarea class="contact-message" id="message" rows="6" placeholder="Your Message" required style="resize:none"></textarea></div>
+                                <div class="btn-form-one col-sm-12"><button type="submit" class="btn btn-fill btn-block" id="form-submit" value="Reset form">Send Message</button></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-12 col-md-6 wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.5s ">
+                        <div class="mh-map" style="margin-top:25px;"><iframe style="width:100%;height:400px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48505.97064437011!2d-74.3184103508261!3d40.549913881831436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b5b758c6349b%3A0x938c0e659e3a78da!2sWoodbridge%20Township%2C%20NJ%2C%20USA!5e0!3m2!1sen!2slk!4v1611036440473!5m2!1sen!2slk"
+                                width="541" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                    </div><button type="button" class="btn btn-fill btn-block mt-5 mx-3" data-toggle="modal" data-target="#modelId">Download CV <i class="fa fa-download"></i></button>
+                    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Lindsey Alcinay CV</h5><button type="button" style="outline:none;" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close__btn">&times;</span></button></div>
+                                <div class="modal-body">
+                                    <div class="container-fluid"><iframe src="https://docs.google.com/viewer?url=https://portfolio-app-cv.herokuapp.com/assets/pdf/Lindsey%20Alcinay%20Resume%20.pdf&embedded=true" frameborder="0" width="100%" class="pdf__viewer"></iframe></div>
+                                </div>
+                                <div class="modal-footer"><a href="assets/pdf/Lindsey Alcinay Resume .pdf" class="btn btn-fill">Download CV</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="text-left text-xs-center"><a class="nav-link-footer" href="#home">Copyright &copy; <script> var CurrentYear = new Date().getFullYear()
+                                    document.write(CurrentYear)</script> Lindsey Alcinay. All rights reserved </a></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mh-footer-info">
+                                    <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                        <li>
+                                            <a onclick="window.open(this.href,'targetWindow', `toolbar=no, width=960, height=1040, top=0, left=960, status=no, menubar=no, scrollbars=yes, resizable=yes`); return false;" href="https://github.com/Lcw900" target="_blank"><i class="fab fa-github"></i></a>
+                                        </li>
+                                        <li><a onclick="window.open(this.href,'targetWindow', `toolbar=no, width=960, height=1040, top=0, left=960, status=no, menubar=no, scrollbars=yes, resizable=yes`); return false;" href="https://linkedin.com/in/lindsey-alcinay-63571354/"
+                                                target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><button onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-arrow-up"></i></button>
+    <script src="assets/plugins/js/jquery.min.js"></script>
+    <script src="assets/plugins/js/popper.min.js"></script>
+    <script src="assets/plugins/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+    <script src="assets/plugins/js/validator.min.js"></script>
+    <script src="assets/plugins/js/wow.min.js"></script>
+    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
+    <script src="assets/plugins/js/circle-progress.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/plugins/js/jquery.nav.js"></script>
+    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
+    <script src="assets/plugins/js/isotope.pkgd.js"></script>
+    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
+    <script src="assets/js/map-init.js"></script>
+    <script src="assets/js/custom-scripts.js"></script>
+    <script src="js/function.js"></script>
+</body>
+
+</html>
